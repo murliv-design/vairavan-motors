@@ -159,9 +159,10 @@ export const translations = {
     },
     callBtn: "அழை",
   },
-} as const;
+};
 
-type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: (typeof translations)["en"] };
+type Dict = typeof translations.en;
+type Ctx = { lang: Lang; setLang: (l: Lang) => void; t: Dict };
 const LangContext = createContext<Ctx | null>(null);
 
 export function LangProvider({ children }: { children: ReactNode }) {
@@ -174,7 +175,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
     setLangState(l);
     if (typeof window !== "undefined") localStorage.setItem("vm_lang", l);
   };
-  const t = translations[lang];
+  const t: Dict = translations[lang] as Dict;
   return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
 }
 
