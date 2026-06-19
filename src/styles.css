@@ -34,8 +34,8 @@
   --color-ink: var(--ink);
   --color-ink-foreground: var(--ink-foreground);
   --color-whatsapp: var(--whatsapp);
-  --font-display: "Bebas Neue", "Barlow Condensed", sans-serif;
-  --font-sans: "Barlow", system-ui, sans-serif;
+ --font-display: "Bebas Neue", "Barlow Condensed", "Noto Sans Tamil", sans-serif;
+ --font-sans: "Barlow", "Noto Sans Tamil", system-ui, sans-serif;
 }
 
 :root {
