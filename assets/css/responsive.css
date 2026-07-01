@@ -1,0 +1,161 @@
+/* Responsive breakpoints — sm:640, md:768, lg:1024, xl:1280 */
+
+@media (min-width: 640px) {
+  .container-7xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 3.75rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-cta {
+    flex-direction: row;
+  }
+
+  .review-cta__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .site-footer__brand-col {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-header__inner {
+    height: 5rem;
+  }
+
+  .site-header__logo {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .site-header__name {
+    font-size: 1.5rem;
+  }
+
+  .site-header__tagline {
+    font-size: 0.75rem;
+  }
+
+  .site-nav {
+    display: flex;
+  }
+
+  .site-header__mobile-tools .menu-toggle {
+    display: none;
+  }
+
+  .hero__content {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__title {
+    font-size: 4.5rem;
+  }
+
+  .hero__image-wrap {
+    display: block;
+  }
+
+  .section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .section__title {
+    font-size: 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-item__value {
+    font-size: 2.25rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reviews-sidebar {
+    grid-column: span 1;
+  }
+
+  .reviews-cards {
+    grid-column: span 2;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-grid img.gallery-grid__hero {
+    aspect-ratio: auto;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+
+  .fab-whatsapp {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .mobile-call-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  body {
+    padding-bottom: 3.5rem;
+  }
+}
